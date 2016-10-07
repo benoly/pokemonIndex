@@ -1,7 +1,7 @@
 angular.module("pokemonIndex",["ui.router"])
 .config(function($urlRouterProvider, $stateProvider){
   $stateProvider
-    .state("home", {
+    .state("home", { 
       url: "/",
       templateUrl: "/templates/home.html"
     })

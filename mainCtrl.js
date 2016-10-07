@@ -10,4 +10,12 @@ angular.module("pokemonIndex")
   };
   $scope.getPokemon();
 
+  $scope.getOne=function(obj) {
+    mainServ.getOne(obj)
+    .then(function(response){
+      $scope.onePokemon=response;
+      console.log(response);
+    });
+  };
+
 });

@@ -10,5 +10,14 @@ this.getPokemon=function(){
     });
   };
 
+  this.getOne=function(obj){
+    return $http({
+      method: "GET",
+      url: obj.url
+    }).then(function(response){
+      return response.data;
+    });
+  };
+
 
 });
